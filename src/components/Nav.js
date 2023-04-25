@@ -1,12 +1,8 @@
 import React from 'react';
 
 import { BiHomeAlt, BiUser } from 'react-icons/bi';
-import {
-	BiclipboardData,
-	BsBriefcase,
-	BsChatSquare,
-	BsClipboardData,
-} from 'react-icons/bs';
+import { BsBriefcase, BsChatSquare, BsClipboardData } from 'react-icons/bs';
+import { GiAchievement } from 'react-icons/gi';
 import { Link } from 'react-scroll';
 
 const Nav = () => {
@@ -19,7 +15,7 @@ const Nav = () => {
 						activeClass='active'
 						smooth={true}
 						spy={true}
-            offset = {-200}
+						offset={-200}
 						className='cursor-pointer w-[60px] h-[60px] flex items-center justify-center'
 					>
 						<BiHomeAlt />
@@ -43,13 +39,13 @@ const Nav = () => {
 						<BsClipboardData />
 					</Link>
 					<Link
-						to='work'
+						to='skills'
 						activeClass='active'
 						smooth={true}
 						spy={true}
 						className='cursor-pointer w-[60px] h-[60px] flex items-center justify-center'
 					>
-						<BsBriefcase />
+						<GiAchievement />
 					</Link>
 					<Link
 						to='contact'

@@ -5,7 +5,7 @@ import Header from './components/Header';
 import Nav from './components/Nav';
 import About from './components/About';
 import Projects from './components/Projects';
-import Work from './components/Work';
+import Skills from './components/Skills';
 import Contact from './components/Contact';
 
 const App = () => {
@@ -16,7 +16,7 @@ const App = () => {
       <Nav />
       <About />
       <Projects />
-      <Work />
+      <Skills />
       <Contact />
       <div className='h-[4000px]'></div>
     </div>
