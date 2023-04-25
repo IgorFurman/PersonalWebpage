@@ -34,7 +34,7 @@ const Nav = () => {
 						<BiUser />
 					</Link>
 					<Link
-						to='services'
+						to='projects'
 						activeClass='active'
 						smooth={true}
 						spy={true}
