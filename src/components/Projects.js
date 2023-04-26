@@ -54,7 +54,6 @@ const Projects = () => {
 						<h3 className='h3 max-w-[455px] mb-16'>
 							Projects completed so far
 						</h3>
-
 					</motion.div>
 					{/* projects  */}
 					<motion.div
@@ -71,7 +70,7 @@ const Projects = () => {
 								const { name, description, technologies, link } = project;
 								return (
 									<div
-										className='border-b border-white/20 h-[146px] mb-[38px] flex'
+										className='border-b border-white/20 h-[146px] mb-[57px] flex'
 										key={index}
 									>
 										<div className='max-w-[476px]'>

@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { BiHomeAlt, BiUser } from 'react-icons/bi';
-import { BsBriefcase, BsChatSquare, BsClipboardData } from 'react-icons/bs';
+import { BsChatSquare, BsClipboardData } from 'react-icons/bs';
 import { GiAchievement } from 'react-icons/gi';
 import { Link } from 'react-scroll';
 
