@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/PlanYourTrip/static/css/main.53be44d0.css",
+    "main.js": "/PlanYourTrip/static/js/main.7c0efe19.js",
+    "static/media/avatar.svg": "/PlanYourTrip/static/media/avatar.6acdd0f348322ba06d8275de5dd8ee85.svg",
+    "static/media/site-bg.jpg": "/PlanYourTrip/static/media/site-bg.54724d703024833ef9c6.jpg",
+    "static/media/about.png": "/PlanYourTrip/static/media/about.34da930ab4436bc41a33.png",
+    "static/media/sass-logo.svg": "/PlanYourTrip/static/media/sass-logo.6dcae060028654b3629bd7d2f150fff9.svg",
+    "static/media/react-logo.svg": "/PlanYourTrip/static/media/react-logo.d055302203ad89482dd5034f32096037.svg",
+    "static/media/redux-logo.svg": "/PlanYourTrip/static/media/redux-logo.3d1ad84efe62d2abdf6198eadc48778d.svg",
+    "static/media/html5-logo.svg": "/PlanYourTrip/static/media/html5-logo.e4505bcd8a5f26316c8045615f045b6b.svg",
+    "index.html": "/PlanYourTrip/index.html",
+    "static/media/css-logo.svg": "/PlanYourTrip/static/media/css-logo.e934a54feed5d90cb602a3e25166673a.svg",
+    "static/media/javascript-1.svg": "/PlanYourTrip/static/media/javascript-1.a92a31fa063e27ed114896f2cb6ea7f6.svg",
+    "main.53be44d0.css.map": "/PlanYourTrip/static/css/main.53be44d0.css.map",
+    "main.7c0efe19.js.map": "/PlanYourTrip/static/js/main.7c0efe19.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.53be44d0.css",
+    "static/js/main.7c0efe19.js"
+  ]
+}
