@@ -58,7 +58,7 @@
     @apply h-[48px] px-6 text-sm;
   }
   .btn-lg {
-    @apply h-[56px] px-10 text-base;
+    @apply h-[56px] px-10 text-base flex items-center justify-center;
   }
   .btn-link {
     @apply text-base;
