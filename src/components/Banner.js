@@ -1,24 +1,20 @@
 import React from 'react';
-// img
+
 import Image from '../assets/avatar.svg';
-// icons
-import { FaGithub, FaYoutube, FaDribbble } from 'react-icons/fa';
-// type animation
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { TypeAnimation } from 'react-type-animation';
-// motion
 import { motion } from 'framer-motion';
-// variants
 import { fadeIn } from '../variants';
 
 const Banner = () => {
 	return (
 		<section
-      className='min-h-[85vh] lg:min-h-[78vh] flex items-center'
+      className='min-h-[85vh] lg:min-h-[69vh] flex items-center lg:mb-[100px]'
       id='home'
     >
       <div className='container mx-auto'>
         <div className='flex flex-col gap-y-8 lg:flex-row lg:items-center lg:gap-x-12'>
-          {/* text */}
+
           <div className='flex-1 text-center font-secondary lg:text-left'>
             <motion.h1
               variants={fadeIn('up', 0.3)}
@@ -39,7 +35,7 @@ const Banner = () => {
               <span className='text-white mr-4'>I am a</span>
               <TypeAnimation
                 sequence={[
-                  'Junior',
+                  'Aspiring',
                   2000,
                   'Frontend',
                   2000,
@@ -68,12 +64,12 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className='flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0'
             >
-              <button className='btn btn-lg'>Contact me</button>
-              <a href='#' className='text-gradient btn-link'>
+              <a  href='#' className='text-gradient btn-link'>Contact me</a>
+              <a href='#' className='btn btn-lg'>
                 My Portfolio
               </a>
             </motion.div>
-            {/* socials */}
+           
             <motion.div
               variants={fadeIn('up', 0.7)}
               initial='hidden'
@@ -81,18 +77,16 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className='flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0'
             >
-              <a href='#'>
-                <FaYoutube />
-              </a>
+             
               <a href='#'>
                 <FaGithub />
               </a>
               <a href='#'>
-                <FaDribbble />
+                <FaLinkedin />
               </a>
             </motion.div>
           </div>
-          {/* image */}
+        
           <motion.div
             variants={fadeIn('down', 0.5)}
             initial='hidden'

@@ -1,9 +1,9 @@
 import React from 'react';
-// motion
+
 import { motion } from 'framer-motion';
-// variants
+
 import { fadeIn } from '../variants';
-// validator
+
 import { FormValidator } from '../validator';
 
 const validate = (values) => {
@@ -29,10 +29,10 @@ const Contact = () => {
   const { handleInputChange, handleSubmit, errors } = FormValidator(validate);
 
   return (
-    <section className='py-16 lg:section' id='contact'>
-      <div className='container mx-auto'>
+    <section className='py-1 lg:section  min-h-screen ' id='contact'>
+      <div className='container  mx-auto'>
         <div className='flex flex-col lg:flex-row'>
-          {/* text */}
+       
           <motion.div
             variants={fadeIn('right', 0.3)}
             initial='hidden'
@@ -42,11 +42,11 @@ const Contact = () => {
           >
             <div>
               <h2 className='text-[45px] lg:text-[90px] leading-none mb-12'>
-                Get in <br /> touch!
+                Contact<br /> Form
               </h2>
             </div>
           </motion.div>
-          {/* form */}
+       
           <motion.form
             variants={fadeIn('left', 0.3)}
             initial='hidden'
@@ -61,7 +61,7 @@ const Contact = () => {
               }`}
               type='text'
               name='name'
-              placeholder='Your name'
+              placeholder='Name'
               onChange={handleInputChange}
             />
             {errors.name && <p className='text-red-500'>{errors.name}</p>}
@@ -71,7 +71,7 @@ const Contact = () => {
               }`}
               type='text'
               name='email'
-              placeholder='Your email'
+              placeholder='E-mail'
               onChange={handleInputChange}
             />
             {errors.email && <p className='text-red-500'>{errors.email}</p>}
@@ -80,7 +80,7 @@ const Contact = () => {
                 errors.message && 'border-red-500'
               }`}
               name='message'
-              placeholder='Your message'
+              placeholder='Message'
               onChange={handleInputChange}
             ></textarea>
             {errors.message && (

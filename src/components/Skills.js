@@ -1,5 +1,4 @@
 import React from 'react';
-
 import { Carousel } from 'react-carousel3';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../variants';
@@ -11,39 +10,46 @@ import ReduxLogo from '../assets/redux-logo.svg';
 import CssLogo from '../assets/css-logo.svg';
 import SassLogo from '../assets/sass-logo.svg';
 
+const technologies = [
+  { name: "JavaScript", logo: JsLogo },
+  { name: "HTML5", logo: Html5Logo },
+  { name: "React", logo: ReactLogo },
+  { name: "Redux", logo: ReduxLogo },
+  { name: "CSS", logo: CssLogo },
+  { name: "SASS", logo: SassLogo }
+]
+
 const Skills = () => {
 	return (
-		<section className='h-[450px]' id='skills'>
-			<div className='container mx-auto'>
+		<section className='min-h-screen md:mt-[100px] lg:mt-[300px] lg:mb-0' id='skills'>
+			<div className='container mx-auto '>
 				<motion.h2
 					variants={fadeIn('up', 0.3)}
 					initial='hidden'
 					whileInView={'show'}
 					viewport={{ once: false, amount: 0.7 }}
-					className='h2 p-5 text-gradient text-lg border solid'
+					className='h2 p-5 md:mb-[200px] text-gradient text-lg border solid '
 				>
 					Technology stack.
 				</motion.h2>
-				<Carousel height={70 + '%'} width={100 + '%'} autoPlay={true}>
-					<div key={1} className='flex justify-items-center mt-20'>
-						<img alt='java script logo' src={JsLogo} />
-					</div>
-					<div key={2} className='flex justify-items-center mt-20'>
-						<img alt='react logo' src={ReactLogo} />
-					</div>
-					<div key={3} className='flex justify-items-center mt-20'>
-						<img alt='sass logo' src={SassLogo} />
-					</div>
-					<div key={4} className='flex justify-items-center mt-20'>
-						<img alt='html logo' src={Html5Logo} />
-					</div>
-					<div key={5} className='flex justify-items-center mt-20'>
-						<img alt='css logo' src={CssLogo} />
-					</div>
-					<div key={6} className='flex justify-items-center mt-20'>
-						<img alt='redux logo' src={ReduxLogo} />
-					</div>
-				</Carousel>
+        <div className="md:flex hidden content-center ">
+				  <Carousel height={500 + 'px'} width={100 + '%'} autoPlay={true} >
+					  {technologies.map((tech, index) => (
+              <div key={index} className='flex justify-items-center '>
+                <img alt={`${tech.name} logo`} src={tech.logo} />
+								<p className='mt-2 text-center'>{tech.name}</p>
+              </div>
+            ))}
+				  </Carousel>
+        </div>
+        <div className="md:hidden">
+          {technologies.map((tech, index) => (
+            <div key={index} className="flex flex-col items-center">
+              <img className='mt-5' alt={`${tech.name} logo`} src={tech.logo} />
+              <p className='font-primary'>{tech.name}</p>
+            </div>
+          ))}
+        </div>
 			</div>
 		</section>
 	);
