@@ -41,7 +41,7 @@ const Contact = () => {
             className='flex-1 flex justify-start items-center'
           >
             <div>
-              <h2 className='text-[45px] lg:text-[90px] leading-none mb-12'>
+              <h2 className='text-[45px] lg:text-[90px] leading-none my-12 text-gradient '>
                 Contact<br /> Form
               </h2>
             </div>
