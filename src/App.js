@@ -5,7 +5,8 @@ import Banner from './components/Banner';
 import Nav from './components/Nav';
 import About from './components/About';
 import Projects from './components/Projects';
-import Skills from './components/Skills';
+import Technologies from './components/Technologies';
+import Skills from './components/Skills'
 import Contact from './components/Contact';
 
 const App = () => {
@@ -15,8 +16,9 @@ const App = () => {
       <Banner />
       <Nav />
       <About />
-      <Projects />
-      <Skills />
+      <Projects/>
+      <Technologies />
+      <Skills/>
       <Contact />
     </div>
   );
