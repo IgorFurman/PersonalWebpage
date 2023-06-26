@@ -45,6 +45,16 @@
   body {
     @apply font-secondary text-lg leading-8 text-white;
   }
+  li::marker {
+    content: '■ ';
+    color: #b809c3;
+    text-shadow: 2px 2px 4px #ff56f6, -2px -2px 4px #3bace2, 2px -2px 4px #406aff, -2px 2px 4px #406aff;
+    transition: color 0.1s;
+  }
+
+  li:hover::marker {
+    color: rgb(242, 233, 233);
+  }
   .h2 {
     @apply font-primary text-[32px] mb-6 tracking-[10%] uppercase;
   }
@@ -69,4 +79,6 @@
   .section {
     @apply py-8 lg:py-24 lg:h-screen flex items-center;
   }
+ 
+
 }
