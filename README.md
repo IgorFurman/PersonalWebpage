@@ -1,4 +1,4 @@
-# Portfolio - Personal Webpage
+# Igor Furman - Personal Webpage
 
 ![App Screenshot]()
 
