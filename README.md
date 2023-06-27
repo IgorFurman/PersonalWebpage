@@ -1,8 +1,6 @@
 # Igor Furman - Personal Webpage
 
-![App Screenshot]()
-
-You can check it out live [here]().
+You can check it out live [here](https://igorfurman.github.io/PersonalWebpage/).
 
 This portfolio project is a personal webpage that presents various sections about the author. It's designed to demonstrate skills, projects, and technologies used, alongside a contact section.
 
