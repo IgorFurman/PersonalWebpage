@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { fadeIn } from '../variants'
 import { useInView } from 'react-intersection-observer';
 
-import '../marker.css'
+
 
 const actualSkills = [
   "Semantic & Acessible HTML",
@@ -33,6 +33,7 @@ const actualSkills = [
   "NPM",
   "React",
   "Git",
+  "Firebase (basics)",
   "Node.js (basics)",
   "Express (basics)",
 ];
