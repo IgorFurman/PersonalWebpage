@@ -3,21 +3,27 @@ import React, {useState, useEffect} from 'react';
 import { BiHomeAlt, BiUser } from 'react-icons/bi';
 import { BsChatSquare, BsClipboardData } from 'react-icons/bs';
 import { GiAchievement, GiMaterialsScience } from 'react-icons/gi';
-import { Link } from 'react-scroll';
+import { Link, animateScroll as scroll, scrollSpy} from 'react-scroll';
 
 const Nav = () => {
 
-	const [offset, setOffset] = useState(-200);
+	const [offset, setOffset] = useState(0);
 
 	useEffect(() => {
-		const updateOffset = () => {
-			setOffset(window.innerWidth <= 900 ? 0 : -200);
-		};
+    scrollSpy.update();
+}, []);
 
-		window.addEventListener('resize', updateOffset);
-		updateOffset();
-		return () => window.removeEventListener('resize', updateOffset);
-	}, []);
+
+useEffect(() => {
+	const updateOffset = () => {
+		setOffset(window.innerWidth <= 960 ? 0 : 150);
+	};
+
+	window.addEventListener('resize', updateOffset);
+	updateOffset();
+	return () => window.removeEventListener('resize', updateOffset);
+}, []);
+
 
 	return (
 		<nav className='fixed bottom-2 lg:bottom-8 w-full overflow-hidden z-50'>
@@ -38,7 +44,7 @@ const Nav = () => {
 						activeClass='active'
 						smooth={true}
 						spy={true}
-				
+						offset='0'
 						className='cursor-pointer w-[60px] h-[60px] flex items-center justify-center'
 					>
 						<BiUser />
@@ -48,7 +54,7 @@ const Nav = () => {
 						activeClass='active'
 						smooth={true}
 						spy={true}
-						offset={offset}
+				
 						className='cursor-pointer w-[60px] h-[60px] flex items-center justify-center'
 					>
 						<BsClipboardData />
@@ -58,7 +64,7 @@ const Nav = () => {
 						activeClass='active'
 						smooth={true}
 						spy={true}
-						offset={-10}
+						offset={20}
 						className='cursor-pointer w-[60px] h-[60px] flex items-center justify-center'
 					>
 						<GiAchievement />
@@ -68,6 +74,7 @@ const Nav = () => {
 						activeClass='active'
 						smooth={true}
 						spy={true}
+						offset={offset}
 						className='cursor-pointer w-[60px] h-[60px] flex items-center justify-center'
 					>
 						<GiMaterialsScience />
@@ -77,7 +84,7 @@ const Nav = () => {
 						activeClass='active'
 						smooth={true}
 						spy={true}
-						
+						offset={offset}
 						className='cursor-pointer w-[60px] h-[60px] flex items-center justify-center'
 					>
 						<BsChatSquare />

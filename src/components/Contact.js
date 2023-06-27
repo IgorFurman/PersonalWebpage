@@ -29,7 +29,7 @@ const Contact = () => {
   const { handleInputChange, handleSubmit, errors } = FormValidator(validate);
 
   return (
-    <section className='py-1 lg:section  min-h-screen ' id='contact'>
+    <section className='py-1 md:section' id='contact'>
       <div className='container  mx-auto'>
         <div className='flex flex-col lg:flex-row'>
        

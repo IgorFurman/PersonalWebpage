@@ -60,7 +60,7 @@ const Projects = () => {
   });
 
   return (
-    <section className='section mx-auto h-fit-content ' id='projects'>
+    <section className='md:section' id='projects'>
       <div className='container mx-auto'>
         <h2 className='h2 text-accent' ref={ref}> 
           Projects completed so far
@@ -90,7 +90,7 @@ const ProjectSection = ({ title, projects }) => (
 			whileInView={'show'}
 			viewport={{ once: false, amount: 0.3 }}
 		>
-			<h3 className=' h3 text-accent font-primary max-w-[455px] mt-1 mb-6 text-left border-b border-gray-400'>
+			<h3 className=' h3 text-accent font-primary mt-1 mb-6 text-left border-b border-b-accent'>
 				{title}:
 			</h3>
 		</motion.div>

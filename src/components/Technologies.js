@@ -77,7 +77,7 @@ const Technologies = () => {
 	};
 	return (
 		<section
-			className='min-h-screen md:mt-[100px] lg:mt-[300px] lg:mb-0'
+			className='min-h-screen md:section mt-10 md:mt-0'
 			id='technologies'
 		>
 			<div className='container mx-auto '>
@@ -86,7 +86,7 @@ const Technologies = () => {
 					initial='hidden'
 					whileInView={'show'}
 					viewport={{ once: false, amount: 0.7 }}
-					className='h2 p-5 md:mb-[100px] text-gradient text-lg border solid '
+					className='h2 p-5 md:mb-[220px] text-gradient text-lg border solid '
 				>
 					Technology stack.
 				</motion.h2>
@@ -97,7 +97,7 @@ const Technologies = () => {
 					viewport={{ once: false, amount: 0.7 }}
 					className='md:flex hidden content-center '
 				>
-					<Carousel height={500 + 'px'} width={100 + '%'} autoPlay={true}>
+					<Carousel height={200 + 'px'} width={100 + '%'} autoPlay={true}>
 						{technologies.map((tech, index) => (
 							<div key={index} className='flex justify-items-center '>
 								<img alt={`${tech.name} logo`} src={tech.logo} />
