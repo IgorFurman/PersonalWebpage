@@ -41,8 +41,7 @@ The `fadeIn` function generates Framer Motion variants for fading in elements wi
 
 ## Validator
 
-This is universal function used for validation name, email, and message inputs. Error messages are displayed for invalid inputs.
-
+This is universal function used for validation name, email, and message inputs. Error messages are displayed for invalid inputs or posting errors.
 
 
 ## 🚀How To Use <a name="how-to-use"></a>
