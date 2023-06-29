@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Image from '../assets/avatar.svg';
+import Image from '../assets/avatar.png';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { TypeAnimation } from 'react-type-animation';
 import { motion } from 'framer-motion';
@@ -88,12 +88,12 @@ const Banner = () => {
 					</div>
 
 					<motion.div
-						variants={fadeIn('down', 0.5)}
+						variants={fadeIn('right', 0.5)}
 						initial='hidden'
 						whileInView={'show'}
-						className='hidden lg:flex flex-1 max-w-[320px] lg:max-w-[482px]'
+						className='hidden lg:flex flex-1  max-w-[320px] lg:max-w-[482px]'
 					>
-						<img src={Image} alt='' />
+						<img className='rounded-3xl'src={Image} alt='' />
 					</motion.div>
 				</div>
 			</div>

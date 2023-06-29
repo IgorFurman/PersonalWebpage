@@ -30,16 +30,18 @@ const actualSkills = [
 	'NPM',
 	'React',
 	'Git',
+	'SEO',
 	'Firebase (basics)',
 	'Node.js (basics)',
 	'Express (basics)',
 ];
 
 const futureSkills = [
+	'Server Side Rendering',
 	'TypeScript',
-	'JS Classes',
 	'Unit testing',
 	'Cypress',
+	'JS Classes',
 	'React Native',
 ];
 
