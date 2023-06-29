@@ -26,7 +26,7 @@ const validate = (values) => {
   return errors;
 };
 const Contact = () => {
-  const { handleInputChange, handleSubmit, errors } = FormValidator(validate);
+  const { handleInputChange, handleSubmit, errors, sendMessage } = FormValidator(validate);
 
   return (
     <section className='py-1 md:section' id='contact'>
@@ -87,6 +87,9 @@ const Contact = () => {
               <p className='text-red-500'>{errors.message}</p>
             )}
             <button className='btn btn-lg'>Send message</button>
+            {sendMessage && (
+              <p className='text-green-500'>{sendMessage}</p>
+            )}
           </motion.form>
         </div>
       </div>
