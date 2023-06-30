@@ -3,26 +3,20 @@ import { motion } from 'framer-motion';
 import { fadeIn } from '../variants';
 
 const About = () => {
-
-
 	return (
 		<section
 			className='md:section lg:my-auto'
 			id='about'
-
 		>
-			<div className='container'>
-				<h2 className='h2 text-accent'>About me.</h2>
-
+			<div className='container mx-auto'>
+				<motion.h2 
+				variants={fadeIn('right', 0.3)}
+				initial='hidden'
+				whileInView={'show'}
+				viewport={{ once: false, amount: 0.3 }}
+				className='h2 text-accent'>About me.</motion.h2>
 				<div className='gap-y-10 lg:gap-x-20 md:items-center'>
-					<motion.div
-						variants={fadeIn('right', 0.3)}
-						initial='hidden'
-						whileInView={'show'}
-						viewport={{ once: false, amount: 0.3 }}
-						className='flex-1 '
-					></motion.div>
-
+			
 					<motion.div
 						variants={fadeIn('left', 0.5)}
 						initial='hidden'
@@ -31,7 +25,7 @@ const About = () => {
 						className='flex-1'
 					>
 						<h3 className='h3 mb-4 lg:col-span-2'>
-							I'm a aspiring React Frontend Developer
+							I'm a Aspiring React Frontend Developer
 						</h3>
 						<div className='md:text-xl lg:grid lg:grid-cols-2 gap-4'>
 							<div>
@@ -57,13 +51,11 @@ const About = () => {
 								Currently, my focus lies in further mastering building React applications and am taking strides towards gaining a solid foundation in TypeScript. Though the realm of coding is vast and complex, my current skill set equips me to solve simple to moderately complex problems. I believe in lifelong learning, and the ever-evolving landscape of technology offers an abundance of opportunities to do just that.
 								</p>
 								<p className='mb-1 ' style={{ textIndent: '2em' }}>
-								Outside the realm of coding, I'm a tech enthusiast who loves exploring the latest gadgets. I'm also a movie buff and an avid fitness enthusiast who enjoys hitting the gym and boxing to keep myself physically fit and mentally sharp. You'll often find me planning my next adventure, as my love for travel fuels my curiosity and creativity. 
+								Outside the realm of coding, I'm a tech enthusiast who loves exploring the latest gadgets. I'm also a movie buff and an avid fitness enthusiast who enjoys hitting the gym and boxing to keep myself physically fit and mentally sharp. Obviously I love traveling that fuels my curiosity and creativity. 
 								</p>
 							</div>
 						</div>
 						<div className='flex gap-x-6 lg:gap-x-10 mb-12 lg:col-span-2'>
-							
-							
 						</div>
 					</motion.div>
 				</div>
