@@ -17,7 +17,7 @@ const largeProjects = [
 		name: 'Plan Your Trip',
 		description:
 			'Plan Your Trip is a comprehensive application for travel planning. It includes functions like Display of attractions, hotels, restaurants and weather based on city search, adding places to a personal list and downloading it. The application interacts with a custom backend.',
-		technologies: 'React.js, Redux, Express.js, StyledComponents',
+		technologies: 'React.js, Redux, Redux-saga, StyledComponents',
 		link: 'https://igorfurman.github.io/PlanYourTrip/',
 	},
 	{
@@ -25,7 +25,7 @@ const largeProjects = [
 		description:
 			'Forest was my first personal project. It is simple recreational park company webpage. Offers main page, contact page and offer details page.',
 		technologies: 'Gulp.js, Vanilla JavaScript, SASS, HTML',
-		link: 'https://github.com/IgorFurman/ForestWebside',
+		link: 'https://igorfurman.github.io/ForestWebside/',
 	},
 ];
 
@@ -35,14 +35,14 @@ const smallProjects = [
 		description:
 			'This project is a simple calculator.Basic arithmetic operations including addition, subtraction, multiplication, and division.Supports more complex mathematical operations such as percentage and square operation ^. Clear all input using the clear button C. Clean and intuitive UI which includes an input display and an interactive grid of buttons.',
 		technologies: 'React.js, StyledComponents',
-		link: 'https://github.com/IgorFurman/Calculator-React-App',
+		link: 'https://igorfurman.github.io/CalculatorReact/',
 	},
 	{
 		name: 'Wallet - Personal Finance Manager',
 		description:
 			'Wallet is a personal finance tool. It allows for adding income and expense transactions, viewing a list of them, and calculating the balance. Features include deleting individual or all transactions and theme switching between light and dark.',
 		technologies: 'Vanilla JavaScript, CSS, HTML',
-		link: 'https://github.com/IgorFurman/Finaces-Menager',
+		link: 'https://igorfurman.github.io/Finaces-Menager/',
 	},
 	{
 		name: 'ToDo List App',
@@ -50,7 +50,7 @@ const smallProjects = [
 			"This project is a simple ToDo List application. The app provides an interface for adding, editing, and removing tasks. The tasks are stored in the browser's local storage.",
 
 		technologies: 'Vanilla JavaScript, CSS, HTML',
-		link: 'https://github.com/IgorFurman/TodoList',
+		link: 'https://igorfurman.github.io/TodoList/',
 	},
 	{
 		name: 'Plan Your Trip - backend',
